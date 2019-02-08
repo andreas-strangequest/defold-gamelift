@@ -61,6 +61,7 @@ void GameLift_OnProcessTerminate() {
 
 bool GameLift_OnHealthCheck() {
 	dmLogInfo("GameLift_OnHealthCheck");
+	/*
 	lua_State* L = g_GameLift.m_OnHealthCheckListener.m_L;
 	int top = lua_gettop(L);
 
@@ -77,7 +78,8 @@ bool GameLift_OnHealthCheck() {
 	}
 	lua_pop(L, 1); // pop health check boolean
 	assert(top == lua_gettop(L));
-	return health;
+	*/
+	return true;
 }
 
 
